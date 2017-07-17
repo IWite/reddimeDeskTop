@@ -1,3 +1,22 @@
 page-home {
-
+    color: white;
+    .title {
+        font-size: 57px;
+        color: #FFFFFF;
+        display: block;
+    }
+    .sibTitle {
+        font-size: 29px;
+        color: #FFFFFF;
+    }
+    .text {
+        display: block;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    img{
+        height: 150px;
+    }
 }

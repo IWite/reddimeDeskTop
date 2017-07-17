@@ -7,14 +7,25 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { EnvironmentsModule } from "./environment/env.module";
+import { HttpModule } from '@angular/http';
+
+import { ComunProvider } from "../providers/comun/comun";
+import { BackProvider } from '../providers/back/back';
+import { NumberPipe } from '../pipes/number/number';
+
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    NumberPipe
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    EnvironmentsModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -24,7 +35,9 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    ComunProvider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    BackProvider
   ]
 })
 export class AppModule {}

@@ -1,0 +1,51 @@
+page-factura {
+    .cont {
+        display: block;
+        position: relative;
+        margin: auto;
+        width: 225px;
+    }
+    .acept {
+        position: absolute;
+        z-index: 9;
+        bottom: 10px;
+        right: 10px;
+    }
+    .cerrar {
+        position: absolute;
+        z-index: 9;
+        bottom: 10px;
+        left: 30px;
+    }
+    .title {
+        font-size: 39px;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+    }
+    .inp {
+        position: absolute;
+        z-index: 99;
+        top: 30px;
+        font-size: 1.5em;
+        right: 0;
+        width: 90%;
+        input {
+            text-align: right;
+        }
+    }
+    .val {
+        position: absolute;
+        z-index: 9;
+        text-align: center;
+        width: 100%;
+        top: 65px;
+        font-size: 1.6em;
+    }
+    .pesos {
+        z-index: 99;
+        top: 43px;
+        left: 20px;
+        font-size: 1.5em;
+        position: absolute;
+    }
+}
